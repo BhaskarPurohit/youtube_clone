@@ -5,3 +5,5 @@ export const SearchResult = () => {
     <div>SearchResult</div>
   )
 }
+
+//  default SearchResult
