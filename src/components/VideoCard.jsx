@@ -14,6 +14,8 @@ export const VideoCard = ({video}) => {
             <VideoLength time = {video?.lengthSeconds}/>
           )}
 
+          <div className="flex">bhasjar</div>
+
         </div>
         <div className="flex text-white mt-3">
             <div className="flex items-start">
