@@ -8,7 +8,7 @@ import  Feed  from './components/Feed'
 import  LeftNav  from './components/LeftNav'
 import  LeftNavMenuItem  from './components/LeftNavMenuItem'
 import  {SearchResult}  from './components/SearchResult'
-import  {VideoDetails}  from './components/VideoDetails'
+import  VideoDetails  from './components/VideoDetails'
 
 
 // import  SearchResultVideoCard  from './components/SearchResultVideoCard'
