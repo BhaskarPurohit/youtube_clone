@@ -11,16 +11,21 @@ const SearchResult = () => {
   const {setLoading} = useContext(Context)
 
   useEffect(()=>{
-    const fetchSearchResults = ()=>{
-      setLoading(true)
-      fetchDataFromApi(`search/?q=${searchQuery}`).then((res)=>{
-        console.log(res);
-        setResult(res?.contents)
-        setLoading(false)
-      })
-    }
+    document.getElementById("root").classList.remove("custom-h")
+    fetchSearchResults()
+    
+    
 
   },[searchQuery])
+
+  const fetchSearchResults = ()=>{
+    setLoading(true)
+    fetchDataFromApi(`search/?q=${searchQuery}`).then((res)=>{
+      console.log(res);
+      setResult(res?.contents)
+      setLoading(false)
+    })
+  }
   return (
     <div>SearchResult</div>
   )
